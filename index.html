@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik - Kalkulator Matematik</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <!-- <li><a href="#calculator">Kalkulator</a></li>
+            <li><a href="#explanation">Rumus Bangun Ruang</a></li> -->
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Katik - Kalkulator Matematik</h1>
+        <p>Selamat datang di Katik, sebuah web sederhana yang berfungsi untuk menghitung bangun ruang.</p>
+    </header>
+
+    <section id="calculator">
+        <h2>Pilih Bangun Ruang untuk melihat Rumus</h2>
+        <button id="btnPersegi">Persegi</button>
+
+        <div>
+            <label for="selectCalculation">Pilih Operasi:</label>
+            <select id="selectCalculation">
+                <option value="luas">Luas</option>
+                <option value="keliling">Keliling</option>
+            </select>
+
+            <div id="inputContainer">
+                <label for="inputSisi">Masukkan Panjang Sisi:</label>
+                <input type="number" id="inputSisi" placeholder="Panjang Sisi">
+            </div>
+
+            <button id="btnHitung">Hitung</button>
+            <button id="btnReset">Reset</button>
+
+            <div id="resultContainer">
+                <p id="resultText"></p>
+                <!-- <div id="visualization"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="explanation">
+        <h2>Rumus Bangun Ruang:</h2>
+        <p id="formulaExplanation"></p>
+    </section>
+
+    <footer>
+
+        <p> &copy; Katik for Mini Project 2024</p>
+        <p>by Athalie Aurora</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
